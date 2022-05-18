@@ -196,6 +196,10 @@ def game_start():
 
 # This is the main function sorta
 game_start()
-choice = input("Nar:\t Play again? YES, NO\n").upper()
-if choice == "YES":
-    game_start()
+i = 1
+while i == 1:
+    choice = input("Nar:\t Play again? YES, NO\n").upper()
+    if choice == "NO":
+        i = 0
+    else:
+        game_start()
