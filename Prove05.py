@@ -1,6 +1,6 @@
 
 #TODO Complete
-# This is the lv 3 part 1 of 6
+# This is lv 3 part 1 of 6
 def lv_three_1_of_6():
     l = 1 # LV 3
     while l == 1:
@@ -34,7 +34,7 @@ def lv_three_1_of_6():
     # While Lv3 - 1/6
 
 # TODO Complete
-# This is the lv 3 part 2 of 6
+# This is lv 3 part 2 of 6
 def lv_three_2_of_6():
     l = 1 # LV 3
     while l == 1:
@@ -81,7 +81,7 @@ def lv_two_1_of_4():
     # While Lv 2 - 1/2
 
 # TODO Complete
-#
+# This is Lv 3 part 3 of 6
 def lv_three_3_of_6():
     l = 1 # LV 3
     print("Nar:\tYou stop and think, if you climb a tree you could mabey see somewere to hide,\nor just make it easyer for the dragon to find you.")
@@ -103,7 +103,7 @@ def lv_three_3_of_6():
     # While Lv 3 - 3/6
 
 # TODO Complete
-# 
+# This is Lv 3 part 4 of 6
 def lv_three_4_of_6():
     l = 1 # LV 3    
     while l == 1:
@@ -123,7 +123,6 @@ def lv_three_4_of_6():
         else:
             print("Error:\t Input not recognized, try agian.")
     # While Lv 3 - 2/6
-        
 
 # This is the lv 2 part 2 of 4 -- This function calls lv 3 parts 3 - 4
 def lv_two_2_of_4():
