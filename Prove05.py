@@ -33,7 +33,7 @@ def lv_three_1_of_6():
             print("Error:\t input not recognized, try agian.")
     # While Lv3 - 1/6
 
-# TODO 
+# TODO Complete
 # This is the lv 3 part 2 of 6
 def lv_three_2_of_6():
     l = 1 # LV 3
@@ -57,6 +57,7 @@ def lv_three_2_of_6():
             print("Error:\t input not recognized, try agian.")
     # while Lv 3 - 2/6
 
+# TODO complete
 # This is the lv 2 part 1 of 4 -- This function calls lv 3 parts 1 - 2
 def lv_two_1_of_4():
     k = 1 # LV 2
@@ -79,19 +80,26 @@ def lv_two_1_of_4():
             print("Error:\t input not recognized, try agian.")
     # While Lv 2 - 1/2
 
+# TODO Complete
 #
 def lv_three_3_of_6():
     l = 1 # LV 3
+    print("Nar:\tYou stop and think, if you climb a tree you could mabey see somewere to hide,\nor just make it easyer for the dragon to find you.")
     while l == 1:
-        choice = input("You look at a tree and wounder if you should CLIMB it or keep RUNNING")
+        choice = input("Nar:\tYou stop and think if you CLIMB a tree it or keep RUNNING")
         if choice == "CLIMB":
-            print("You climb the tree and as you get to the top ")
+            print("Nar:\tYou climb the tree and as you get to the top you look around and see a small town.")
+            print("Nar:\tYou run to the town and when you arive you exsplane about the dragon and they take you in.")
+            print("Nar:\tGAME OVER, YOU WIN")
             l = 0
         elif choice == "RUNNING":
+            print("Nar:\tYou decide to keep running. You hear the sound of the dragon overhead. You keep running.")
+            print("Nar:\tBut the dragon can hear you smashing through the brush in fear. He dives and grabs you with his teach.")
+            print("Nar:\tGAME OVER, YOU LOSE")
             print("")
             l = 0
         else:
-            print("Error:\t input not recognized, try agian.")
+            print("Error:\t Input not recognized, try agian.")
     # While Lv 3 - 3/6
 
 # TODO not done ---
@@ -116,7 +124,7 @@ def lv_two_2_of_4():
             lv_three_4_of_6()
             
         else:
-            print("Error:\t input not recognized, try agian.")
+            print("Error:\t Input not recognized, try agian.")
     # While Lv 2 - 2/2
 
 # This is the lv 1 part 1 of 2 ** This function calls lv 2 parts 1 - 2
@@ -170,5 +178,9 @@ def game_start():
         else:
             print("Error:\t input not recognized, try agian.")
 
+
 # This is the main function sorta
 game_start()
+choice = input("Nar:\t Play again? YES, NO")
+if choice == "YES":
+    game_start()
