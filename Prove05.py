@@ -124,6 +124,7 @@ def lv_three_4_of_6():
             print("Error:\t Input not recognized, try agian.")
     # While Lv 3 - 2/6
 
+# TODO Complete
 # This is the lv 2 part 2 of 4 -- This function calls lv 3 parts 3 - 4
 def lv_two_2_of_4():
     k = 1 # LV 2
@@ -145,6 +146,7 @@ def lv_two_2_of_4():
             print("Error:\t Input not recognized, try agian.")
     # While Lv 2 - 2/2
 
+# TODO Complete
 # This is the lv 1 part 1 of 2 ** This function calls lv 2 parts 1 - 2
 def lv_one_1_of_2():
     j = 1 # LV 1
@@ -171,12 +173,7 @@ def game_start():
     print("Nar:\tYou wake up you look up at the cliff lay laying under,\nthe last thing you can remember is being chased by a dragon.")
     print("Nar:\tYou hear a roar from the sky.")
 
-    # variables for the loops to repet the if until a valid answer is entered.
     i = 1 # LV 0
-    j = 1 # LV 1
-    k = 1 # LV 2
-    l = 1 # LV 3
-
     # choice branch 1 
     while i == 1:
         print("Nar:\tYou start scaning the sky and see the dragon diveing toward you,")
