@@ -102,18 +102,34 @@ def lv_three_3_of_6():
             print("Error:\t Input not recognized, try agian.")
     # While Lv 3 - 3/6
 
-# TODO not done ---
+# TODO Complete
+# 
 def lv_three_4_of_6():
     l = 1 # LV 3    
     while l == 1:
-        choice = 1
+        choice = input("Nar:\tDo you choose to go to the ISLAND or cuntinue out to SEA?\n").upper()
+        if choice == "ISLAND":
+            k = 0
+            print("Nar:\tYou reach the island and find a nice abandednd house that is still in very good repear.")
+            print("and stocked with suplies. You decide to rest here as the ragon shouldn't know were you are.")
+            print("Nar:\tGAME OVER, YOU WIN")
+            
+        elif choice == "SEA":
+            k = 0
+            print("Nar:\tYou keep heading out to sea and a strom rolls in, the little boat is no match for the waves.")
+            print("It capsized and you meet a water grave.")
+            print("Nar:\tGAME OVER, YOU LOSE")
+            
+        else:
+            print("Error:\t Input not recognized, try agian.")
+    # While Lv 3 - 2/6
         
 
 # This is the lv 2 part 2 of 4 -- This function calls lv 3 parts 3 - 4
 def lv_two_2_of_4():
     k = 1 # LV 2
     while k == 1:
-        choice = input("Do you choose to turn BACK to the forest or get on the BOAT?\n").upper()
+        choice = input("Nar:\tDo you choose to turn BACK to the forest or get on the BOAT?\n").upper()
         if choice == "BACK":
             k = 0
             print("You turn around and run back into the woods.")
@@ -121,6 +137,9 @@ def lv_two_2_of_4():
             
         elif choice == "BOAT":
             k = 0
+            print("Nar:\tYou hop in the boat and start the moter the boat starts up and you gun the engion.")
+            print("The boat starts skiming along the water and you see the forest you came from start to drop away in the distance.")
+            print("ahead of you you see an island come into view.")
             lv_three_4_of_6()
             
         else:
