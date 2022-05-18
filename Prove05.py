@@ -153,8 +153,8 @@ def lv_one_1_of_2():
     while j == 1:   
         choice = input("Do you keep RUNING or ENTER.\n").upper()
         if choice == "ENTER":
-            print("Nar:\tYou enter the cave and take shelter in there.")
-            print("Nar:\tYou step on something and hear a crack.\nYou reach down and feel a broken bone.")
+            print("Nar:\tYou enter the cave and take shelter in it.")
+            print("Nar:\tYou step on something and hear a crack.\nYou reach down and feel a bone on the ground.")
             j = 0
             lv_two_1_of_4()
             
