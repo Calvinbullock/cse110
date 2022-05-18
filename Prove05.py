@@ -41,14 +41,17 @@ def lv_three_2_of_6():
         choice = input("Nar:\tDo you KILL it or take it HOSTAGE \n").upper()
         if choice == "KILL":
             l = 0
-            print("Nar:\t")
-            print("Nar:\t")
-            print("Nar:\t")
+            print("Nar:\tYou start looking for a weapon but the biger dragon crawls his way in.")
+            print("Nar:\tHe sees you in here and eats out of fear of you harming the baby.")
+            print("Nar:\tGAME OVER")
             
         elif choice == "HOSTAGE":
             l = 2
-            print("Nar:\tYou run away into the forest to start your new life.")
-            print("")
+            print("Nar:\tYou wait quietly for the dragon to come back, you hear him come into the bigger room of the cave.")
+            print("You:\t\"If you come in here I will hurt the baby.\"")
+            print("Drag:\tYou if you hurt him I will kill you, but if you come out now I will let you go free.")
+            print("Nar:\tYou agree and the dragon leaves lets you leave with a promise to no longer hunt you.")
+            print("Nar:\tGAME OVER, YOU WIN")
             
         else:
             print("Error:\t input not recognized, try agian.")
