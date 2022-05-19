@@ -168,7 +168,9 @@ def lv_one_1_of_2():
             print("Error:\t input not recognized, try agian.")
     # While Lv 1 - 1
 
-# Main function
+
+# TODO Use recurstion for the new fuctions I make
+# # Main function
 def game_start():
     print("Nar:\tYou wake up you look up at the cliff lay laying under,\nthe last thing you can remember is being chased by a dragon.")
     print("Nar:\tYou hear a roar from the sky.")
@@ -194,7 +196,7 @@ def game_start():
             print("Error:\t input not recognized, try agian.")
 
 
-# This is the main function sorta
+# This is the main function section
 game_start()
 i = 1
 while i == 1:
@@ -203,3 +205,4 @@ while i == 1:
         i = 0
     else:
         game_start()
+
