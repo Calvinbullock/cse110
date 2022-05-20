@@ -196,13 +196,14 @@ def game_start():
             i = 0
             lv_one_1_of_2()
 
-        elif choice == "HIDE": # TODO base one -- -- -- -- - - - - -------------------------------------------------------------------- ###
+        elif choice == "HIDE":
             print("Nar:\tYou jump into a bush.")
             lv_one_2_of_2()
-
             i = 0
+
         else:
             print("ERROR:\tInput not recognized, try agian.")
+
 
 # This is the main function section
 game_start()
