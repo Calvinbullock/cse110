@@ -167,7 +167,7 @@ def lv_one_2_of_2():
     print("Nar:\tYou try to be as quite as possible in the bush.")
     print("Nar:\tThe dragon slams into the ground and looks around.")
     print("Nar:\tHis eyes scaning the brush.")
-    choice = input("what do you do? STAY or DISTRACT by throwing a rock?.\n").upper()
+    choice = input("What do you do? STAY or DISTRACT by throwing a rock?.\n").upper()
     if choice == "STAY":
         print("Nar:\t")
     
@@ -188,7 +188,7 @@ def game_start():
     # choice branch 1 
     while i == 1:
         print("Nar:\tYou start scaning the sky and see the dragon diveing toward you,")
-        choice = input("what do you do? RUN or HIDE.\n").upper()
+        choice = input("What do you do? RUN or HIDE.\n").upper()
 
         if choice == "RUN":
             print("Nar:\tYou take off into the woods.")
