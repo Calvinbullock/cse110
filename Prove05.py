@@ -204,7 +204,6 @@ def game_start():
         else:
             print("ERROR:\tInput not recognized, try agian.")
 
-
 # This is the main function section
 game_start()
 i = 1
