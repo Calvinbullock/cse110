@@ -165,8 +165,18 @@ def lv_one_1_of_2():
 # This is the lv 1 part 2 of 2 ** This function calls lv 2 parts 1 - 2
 def lv_one_2_of_2():
     print("Nar:\tYou try to be as quite as possible in the bush.")
-    print("Nar:\tTHANK YOU FOR TRYING THE BATA")
-    print("Nar:\tMORE WILL COME ENXT TIME")
+    print("Nar:\tThe dragon slams into the ground and looks around.")
+    print("Nar:\tHis eyes scaning the brush.")
+    choice = input("what do you do? STAY or DISTRACT by throwing a rock?.\n").upper()
+    if choice == "STAY":
+        print("Nar:\t")
+    
+    elif choice == "DISTRACT":
+        print("Nar:\t")
+    
+    else:
+        print("Error:\tInput not recognized, try agian.")
+        lv_one_2_of_2()
 
 # TODO Use recurstion for the new fuctions
 # # Main function
