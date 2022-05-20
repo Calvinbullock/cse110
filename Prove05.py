@@ -161,7 +161,7 @@ def lv_one_1_of_2():
         else:
             print("ERROR:\t input not recognized, try agian.")
 
-# TODO Complete
+# TODO In progress
 # This is the lv 1 part 2 of 2 ** This function calls lv 2 parts 1 - 2
 def lv_one_2_of_2():
     print("Nar:\tYou try to be as quite as possible in the bush.")
