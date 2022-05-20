@@ -161,6 +161,12 @@ def lv_one_1_of_2():
         else:
             print("Error:\t input not recognized, try agian.")
 
+# TODO Complete
+# This is the lv 1 part 2 of 2 ** This function calls lv 2 parts 1 - 2
+def lv_one_2_of_2():
+    print("Nar:\tYou try to be as quite as possible in the bush.")
+    print("Nar:\tTHANK YOU FOR TRYING THE BATA")
+    print("Nar:\tMORE WILL COME ENXT TIME")
 
 # TODO Use recurstion for the new fuctions
 # # Main function
@@ -182,18 +188,18 @@ def game_start():
 
         elif choice == "HIDE": # TODO base one -- -- -- -- - - - - -------------------------------------------------------------------- ###
             print("Nar:\tYou jump into a bush.")
-
+            lv_one_2_of_2()
 
             i = 0
         else:
-            print("Error:\t input not recognized, try agian.")
+            print("Error:\tInput not recognized, try agian.")
 
 
 # This is the main function section
 game_start()
 i = 1
 while i == 1:
-    choice = input("Nar:\t Play again? YES, NO\n").upper()
+    choice = input("Nar:\tPlay again? YES, NO\n").upper()
     if choice == "NO":
         i = 0
     else:
