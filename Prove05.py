@@ -31,7 +31,6 @@ def lv_three_1_of_6():
             
         else:
             print("Error:\t input not recognized, try agian.")
-    # While Lv3 - 1/6
 
 # TODO Complete
 # This is lv 3 part 2 of 6
@@ -55,7 +54,6 @@ def lv_three_2_of_6():
             
         else:
             print("Error:\t input not recognized, try agian.")
-    # while Lv 3 - 2/6
 
 # TODO complete
 # This is the lv 2 part 1 of 4 -- This function calls lv 3 parts 1 - 2
@@ -78,7 +76,6 @@ def lv_two_1_of_4():
             
         else:
             print("Error:\t input not recognized, try agian.")
-    # While Lv 2 - 1/2
 
 # TODO Complete
 # This is Lv 3 part 3 of 6
@@ -100,7 +97,6 @@ def lv_three_3_of_6():
             l = 0
         else:
             print("Error:\t Input not recognized, try agian.")
-    # While Lv 3 - 3/6
 
 # TODO Complete
 # This is Lv 3 part 4 of 6
@@ -122,7 +118,6 @@ def lv_three_4_of_6():
             
         else:
             print("Error:\t Input not recognized, try agian.")
-    # While Lv 3 - 2/6
 
 # TODO Complete
 # This is the lv 2 part 2 of 4 -- This function calls lv 3 parts 3 - 4
@@ -144,7 +139,6 @@ def lv_two_2_of_4():
             
         else:
             print("Error:\t Input not recognized, try agian.")
-    # While Lv 2 - 2/2
 
 # TODO Complete
 # This is the lv 1 part 1 of 2 ** This function calls lv 2 parts 1 - 2
@@ -166,10 +160,9 @@ def lv_one_1_of_2():
             
         else:
             print("Error:\t input not recognized, try agian.")
-    # While Lv 1 - 1
 
 
-# TODO Use recurstion for the new fuctions I make
+# TODO Use recurstion for the new fuctions
 # # Main function
 def game_start():
     print("Nar:\tYou wake up you look up at the cliff lay laying under,\nthe last thing you can remember is being chased by a dragon.")
