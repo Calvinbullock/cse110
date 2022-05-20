@@ -30,7 +30,7 @@ def lv_three_1_of_6():
             print("Nar:\tGAME OVER")
             
         else:
-            print("Error:\t input not recognized, try agian.")
+            print("ERROR:\t input not recognized, try agian.")
 
 # TODO Complete
 # This is lv 3 part 2 of 6
@@ -53,7 +53,7 @@ def lv_three_2_of_6():
             print("Nar:\tGAME OVER, YOU WIN")
             
         else:
-            print("Error:\t input not recognized, try agian.")
+            print("ERROR:\t input not recognized, try agian.")
 
 # TODO complete
 # This is the lv 2 part 1 of 4 -- This function calls lv 3 parts 1 - 2
@@ -75,7 +75,7 @@ def lv_two_1_of_4():
             lv_three_2_of_6()
             
         else:
-            print("Error:\t input not recognized, try agian.")
+            print("ERROR:\t input not recognized, try agian.")
 
 # TODO Complete
 # This is Lv 3 part 3 of 6
@@ -96,7 +96,7 @@ def lv_three_3_of_6():
             print("")
             l = 0
         else:
-            print("Error:\t Input not recognized, try agian.")
+            print("ERROR:\t Input not recognized, try agian.")
 
 # TODO Complete
 # This is Lv 3 part 4 of 6
@@ -117,7 +117,7 @@ def lv_three_4_of_6():
             print("Nar:\tGAME OVER, YOU LOSE")
             
         else:
-            print("Error:\t Input not recognized, try agian.")
+            print("ERROR:\t Input not recognized, try agian.")
 
 # TODO Complete
 # This is the lv 2 part 2 of 4 -- This function calls lv 3 parts 3 - 4
@@ -138,7 +138,7 @@ def lv_two_2_of_4():
             lv_three_4_of_6()
             
         else:
-            print("Error:\t Input not recognized, try agian.")
+            print("ERROR:\t Input not recognized, try agian.")
 
 # TODO Complete
 # This is the lv 1 part 1 of 2 ** This function calls lv 2 parts 1 - 2
@@ -159,7 +159,7 @@ def lv_one_1_of_2():
             lv_two_2_of_4()
             
         else:
-            print("Error:\t input not recognized, try agian.")
+            print("ERROR:\t input not recognized, try agian.")
 
 # TODO Complete
 # This is the lv 1 part 2 of 2 ** This function calls lv 2 parts 1 - 2
@@ -169,13 +169,13 @@ def lv_one_2_of_2():
     print("Nar:\tHis eyes scaning the brush.")
     choice = input("What do you do? STAY or DISTRACT by throwing a rock?.\n").upper()
     if choice == "STAY":
-        print("Nar:\t")
+        print("Nar:\tto be cuntinued")
     
     elif choice == "DISTRACT":
-        print("Nar:\t")
+        print("Nar:\tto be cuntinued")
     
     else:
-        print("Error:\tInput not recognized, try agian.")
+        print("ERROR:\tInput not recognized, try agian.")
         lv_one_2_of_2()
 
 # TODO Use recurstion for the new fuctions
@@ -202,7 +202,7 @@ def game_start():
 
             i = 0
         else:
-            print("Error:\tInput not recognized, try agian.")
+            print("ERROR:\tInput not recognized, try agian.")
 
 
 # This is the main function section
@@ -213,5 +213,8 @@ while i == 1:
     if choice == "NO":
         i = 0
     else:
+        print()
+        print("NEW GAME")
+        print()
         game_start()
 
