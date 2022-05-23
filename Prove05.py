@@ -232,17 +232,17 @@ def lv_three_7_of_8():
         print("ERROR:\tInput not recognized, try agian.")
         lv_three_7_of_8()
 
-# TODO Nothing yet #########
+# TODO Complete
 def lv_three_8_of_8():
-    print("Nar:\t")
-    choice = input("\n").upper()
+    print("Nar:\tYou dodge and see a group of people ahead of you")
+    choice = input("\nDo you CALL out to the People or try to AVOID them?").upper()
 
-    if choice == "ROAD":
-        print("Nar:\t")
+    if choice == "CALL":
+        print("Nar:\tYou call out and the groupe sees you they all pull out weapons and charge in to help,\ntakeing down the dragon and taking you back to there village.")
         print("Nar:\tGAME OVER, YOU WIN")
 
-    elif choice == "KEEP":
-        print("Nar:\t")
+    elif choice == "AVOID":
+        print("Nar:\tYou Ignore the group and keep running, you see a small cave and take shelter inside.\nYou hear the dragon start fighting the group of people,\nyou wait for the fighting to stop and then head out again.\nYou quitely look over the battle and see the dragon is dead.\nAfrad of these people you quietly slip away.")
         print("Nar:\tGAME OVER, YOU WIN")
 
     else:
@@ -266,7 +266,7 @@ def lv_two_4_of_4():
         print("ERROR:\tInput not recognized, try agian.")
         lv_two_4_of_4()
 
-# TODO In progress
+# TODO Complete
 # This is the lv 1 part 2 of 2 ** This function calls lv 2 parts 1 - 2
 def lv_one_2_of_2():
     print("Nar:\tYou try to be as quite as possible in the bush.")
