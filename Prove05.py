@@ -215,26 +215,41 @@ def lv_two_3_of_4():
         print("ERROR:\tInput not recognized, try agian.")
         lv_two_3_of_4()
             
-# TODO
+# TODO Complete
 def lv_three_7_of_8():
-    print("Nar:\t")
-    choice = input("\n").upper()
+    print("Nar:\tYou start running and the foliage wips around you. You see road up ahead.")
+    choice = input("Do you want to FOLLOW the road or KEEP running?\n").upper()
 
-    if choice == "ROCK":
-        print("Nar:\t\n")
+    if choice == "ROAD":
+        print("Nar:\tYou fallow the road and it leads you to a village.\nThe village promises to help you kill the dragon.")
+        print("Nar:\tGAME OVER, YOU WIN")
 
-    elif choice == "RUN":
-        print("Nar:\t")
+    elif choice == "KEEP":
+        print("Nar:\tYou keep running and the leaves and branches swat at you cutting and stinging,\n but you keep running.\n The you hear something overhead and it drives you to run faster.\n Sudenly you get pined to the ground, you looked up and see the dragon growing at you.")
+        print("Nar:\tGAME OVER, YOU LOSE")
 
     else:
         print("ERROR:\tInput not recognized, try agian.")
         lv_three_7_of_8()
 
-# TODO
+# TODO Nothing yet #########
 def lv_three_8_of_8():
     print("Nar:\t")
+    choice = input("\n").upper()
 
-# TODO
+    if choice == "ROAD":
+        print("Nar:\t")
+        print("Nar:\tGAME OVER, YOU WIN")
+
+    elif choice == "KEEP":
+        print("Nar:\t")
+        print("Nar:\tGAME OVER, YOU WIN")
+
+    else:
+        print("ERROR:\tInput not recognized, try agian.")
+        lv_three_8_of_8()
+
+# TODO In progress #############
 def lv_two_4_of_4():
     print("Nar:\tYou pick up a rock and chuck it away from you.\nYou hear it crash agianst the forest floor.\nThe dragon wips his head in that direction and begins moveing away from you.")
     choice = input("Do you RUN or throw another ROCK\n").upper()
