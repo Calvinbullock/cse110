@@ -249,7 +249,7 @@ def lv_three_8_of_8():
         print("ERROR:\tInput not recognized, try agian.")
         lv_three_8_of_8()
 
-# TODO In progress #############
+# TODO Complete
 def lv_two_4_of_4():
     print("Nar:\tYou pick up a rock and chuck it away from you.\nYou hear it crash agianst the forest floor.\nThe dragon wips his head in that direction and begins moveing away from you.")
     choice = input("Do you RUN or throw another ROCK\n").upper()
@@ -259,7 +259,7 @@ def lv_two_4_of_4():
         lv_three_7_of_8()
 
     elif choice == "RUN":
-        print("Nar:\t")
+        print("Nar:\tYou take off running and the dragon tunrns around and jumps at you.\nYou fall to the ground but get up and keep running. and the dragon takes another swing at you.")
         lv_three_8_of_8()
 
     else:
