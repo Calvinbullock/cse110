@@ -2,35 +2,34 @@
 #TODO Complete
 # This is lv 3 part 1 of 6
 def lv_three_1_of_6():
-    l = 1 # LV 3
-    while l == 1:
-        choice = input("Nar:\tDo you TLAK to it, fight it, or RUN?\n").upper()
-        if choice == "TALK":
-            l = 0
-            print("Nar:\tYou kneel in front of the dragon and ask that he not eat you.")
-            print("Nar:\tThe dragon replies, he eats you.")
-            print("Nar:\tGAME OVER")
-            
-            # TODO finish the story here##### AGREE or DIE
-        elif choice == "RUN":
-            l = 0
-            print("Nar:\tYou take off again. The dragon jumps at you and carrys you into the sky.")
-            print("Drag:\t\" I win!\" the dragon says with a chuckle.")
-            print("You:\t\"What is going on are you going to eat me?\"")
-            print("Drag:\t\"No not me, my children.\nIf you had deminstarted you abillity to best me I may have spared your life, but the hunt is over..\"")
-            print("Nar:\tGAME OVER")
+    choice = input("Nar:\tDo you TLAK to it, fight it, or RUN?\n").upper()
+    if choice == "TALK":
+        l = 0
+        print("Nar:\tYou kneel in front of the dragon and ask that he not eat you.")
+        print("Nar:\tThe dragon replies, he eats you.")
+        print("Nar:\tGAME OVER")
         
-        elif choice == "FIGHT":
-            l = 0
-            print("Nar:\tYou pick up a stick and take a deffensive stance.")
-            print("Drag:\t\"You have never beat me before, but go ahead and try again.\" He says as he falls over laughing.")
-            print("You:\tYou look at it confused. \"You mean your not going to eat me?\"")
-            print("Drag:\t\"If you win no.\" He growls.")
-            print("Nat:\tYou charge him and he eats you.")
-            print("Nar:\tGAME OVER")
-            
-        else:
-            print("ERROR:\t input not recognized, try agian.")
+        # TODO finish the story here##### AGREE or DIE
+    elif choice == "RUN":
+        l = 0
+        print("Nar:\tYou take off again. The dragon jumps at you and carrys you into the sky.")
+        print("Drag:\t\" I win!\" the dragon says with a chuckle.")
+        print("You:\t\"What is going on are you going to eat me?\"")
+        print("Drag:\t\"No not me, my children.\nIf you had deminstarted you abillity to best me I may have spared your life, but the hunt is over..\"")
+        print("Nar:\tGAME OVER")
+    
+    elif choice == "FIGHT":
+        l = 0
+        print("Nar:\tYou pick up a stick and take a deffensive stance.")
+        print("Drag:\t\"You have never beat me before, but go ahead and try again.\" He says as he falls over laughing.")
+        print("You:\tYou look at it confused. \"You mean your not going to eat me?\"")
+        print("Drag:\t\"If you win no.\" He growls.")
+        print("Nat:\tYou charge him and he eats you.")
+        print("Nar:\tGAME OVER")
+        
+    else:
+        print("ERROR:\t input not recognized, try agian.")
+        lv_three_1_of_6()
 
 # TODO Complete
 # This is lv 3 part 2 of 6
