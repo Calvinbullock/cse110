@@ -161,13 +161,19 @@ def lv_one_1_of_2():
             print("ERROR:\t input not recognized, try agian.")
 
 
-#
+# TODO Complete
 def lv_three_6_of_8():
-    if choice == "":
-        print("Nar:\t")
+    print("Nar:\tYou sit queitly listening for any sound but nothing not even the chirping of a bug.\n it feels like hours pass and you decied to stand up.\nYou look around and see a sign.")
+    choice = input("The sign says nerist town 3 miles LRFT the other says next town 7 miles RIGHT. Whitch do you choose\n").upper()
+  
+    if choice == "LEFT":
+        print("Nar:\t You reach the town and but nothing but a smoldering wreckage is left,\nWith the dragon standing in the center of it.")
+        print("You turn to run but the dragon vires his flame breath disitigrating you.")
+        print("Nar:\tGAME OVER")
         
-    elif choice == "":
-        print("Nar:\t")
+    elif choice == "RIGHT":
+        print("Nar:\tYou start running to the village, after a while you reach the village.\n You see dragon bones on the fences and gates, they hunt dragons!\nYou run in and start yelling for help.\nThey take you in and send a part to kill the dragon.")
+        print("Nar:\tGAME OVER, YOU WIN")
 
     else:
         print("ERROR:\tInput not recognized, try agian.")
@@ -175,8 +181,16 @@ def lv_three_6_of_8():
 
 #
 def lv_three_5_of_8():
-    print("Nar:\t")
-
+    if choice == "":
+        print("Nar:\t")
+        
+    elif choice == "":
+        print("Nar:\t")
+    else:
+        print("ERROR:\tInput not recognized, try agian.")
+        lv_three_5_of_8()
+            
+# TODO complete ish
 #
 def lv_two_3_of_4():
     print("Nar:\tYou sink lower into the bush and start to hold you breath. You hear the dragon snifing the air.\nYou hear a sound on the other side of the dragon it sounds like something running.\nYou think you hear the dragon chase it.")
@@ -205,7 +219,7 @@ def lv_three_8_of_8():
     print("Nar:\t")
 
 #
-def lv_two_3_of_4():
+def lv_two_4_of_4():
     print("Nar:\t")
 
 
