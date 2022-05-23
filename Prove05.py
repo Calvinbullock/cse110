@@ -8,6 +8,7 @@ def lv_three_1_of_8():
         print("Nar:\tYou kneel in front of the dragon and ask that he not eat you.")
         print("Nar:\tThe dragon replies, he eats you.")
         print("Nar:\tGAME OVER")
+        print()
         
         # TODO finish the story here##### AGREE or DIE
     elif choice == "RUN":
@@ -17,6 +18,7 @@ def lv_three_1_of_8():
         print("You:\t\"What is going on are you going to eat me?\"")
         print("Drag:\t\"No not me, my children.\nIf you had deminstarted you abillity to best me I may have spared your life, but the hunt is over..\"")
         print("Nar:\tGAME OVER")
+        print()
     
     elif choice == "FIGHT":
         l = 0
@@ -26,6 +28,7 @@ def lv_three_1_of_8():
         print("Drag:\t\"If you win no.\" He growls.")
         print("Nat:\tYou charge him and he eats you.")
         print("Nar:\tGAME OVER")
+        print()
         
     else:
         print("ERROR:\t input not recognized, try agian.")
@@ -42,6 +45,7 @@ def lv_three_2_of_8():
             print("Nar:\tYou start looking for a weapon but the biger dragon crawls his way in.")
             print("Nar:\tHe sees you in here and eats out of fear of you harming the baby.")
             print("Nar:\tGAME OVER")
+            print()
             
         elif choice == "HOSTAGE":
             l = 2
@@ -50,6 +54,7 @@ def lv_three_2_of_8():
             print("Drag:\tYou if you hurt him I will kill you, but if you come out now I will let you go free.")
             print("Nar:\tYou agree and the dragon leaves lets you leave with a promise to no longer hunt you.")
             print("Nar:\tGAME OVER, YOU WIN")
+            print()
             
         else:
             print("ERROR:\t input not recognized, try agian.")
@@ -63,6 +68,7 @@ def lv_two_1_of_4():
         if choice == "EXIT":
             print("Nar:\tYou exit the cave and the dragon drops down right in front of you.")
             k = 0
+            print()
             lv_three_1_of_8()
             
         elif choice == "GO":
@@ -71,6 +77,7 @@ def lv_two_1_of_4():
             print("Nar:\tYou look around and see another tunnel and hear cries comeing from it, you follow them.")
             print("Nar:\tYou find a baby dragon inside.")
             k = 0
+            print()
             lv_three_2_of_8()
             
         else:
@@ -87,6 +94,7 @@ def lv_three_3_of_8():
             print("Nar:\tYou climb the tree and as you get to the top you look around and see a small town.")
             print("Nar:\tYou run to the town and when you arive you exsplane about the dragon and they take you in.")
             print("Nar:\tGAME OVER, YOU WIN")
+            print()
             l = 0
         elif choice == "RUNNING":
             print("Nar:\tYou decide to keep running. You hear the sound of the dragon overhead. You keep running.")
@@ -108,12 +116,14 @@ def lv_three_4_of_8():
             print("Nar:\tYou reach the island and find a nice abandednd house that is still in very good repear.")
             print("and stocked with suplies. You decide to rest here as the ragon shouldn't know were you are.")
             print("Nar:\tGAME OVER, YOU WIN")
+            print()
             
         elif choice == "SEA":
             k = 0
             print("Nar:\tYou keep heading out to sea and a strom rolls in, the little boat is no match for the waves.")
             print("It capsized and you meet a water grave.")
             print("Nar:\tGAME OVER, YOU LOSE")
+            print()
             
         else:
             print("ERROR:\t Input not recognized, try agian.")
@@ -127,6 +137,7 @@ def lv_two_2_of_4():
         if choice == "BACK":
             k = 0
             print("You turn around and run back into the woods.")
+            print()
             lv_three_3_of_8()
             
         elif choice == "BOAT":
@@ -134,6 +145,7 @@ def lv_two_2_of_4():
             print("Nar:\tYou hop in the boat and start the moter the boat starts up and you gun the engion.")
             print("The boat starts skiming along the water and you see the forest you came from start to drop away in the distance.")
             print("ahead of you you see an island come into view.")
+            print()
             lv_three_4_of_8()
             
         else:
@@ -149,12 +161,14 @@ def lv_one_1_of_2():
             print("Nar:\tYou enter the cave and take shelter in it.")
             print("Nar:\tYou step on something and hear a crack.\nYou reach down and feel a bone on the ground.")
             j = 0
+            print()
             lv_two_1_of_4()
             
         elif choice == "RUNNING":
             print("You turn to run off into the forest.")
             print("You see that the woods are starting to thin out, you stop at the edge of ocean and see a small motoer boat on the beach.")
             j = 0
+            print()
             lv_two_2_of_4()
             
         else:
@@ -170,10 +184,12 @@ def lv_three_6_of_8():
         print("Nar:\t You reach the town and but nothing but a smoldering wreckage is left,\nWith the dragon standing in the center of it.")
         print("You turn to run but the dragon vires his flame breath disitigrating you.")
         print("Nar:\tGAME OVER")
+        print()
         
     elif choice == "RIGHT":
         print("Nar:\tYou start running to the village, after a while you reach the village.\n You see dragon bones on the fences and gates, they hunt dragons!\nYou run in and start yelling for help.\nThey take you in and send a part to kill the dragon.")
         print("Nar:\tGAME OVER, YOU WIN")
+        print()
 
     else:
         print("ERROR:\tInput not recognized, try agian.")
@@ -188,10 +204,12 @@ def lv_three_5_of_8():
     if choice == "FIGHT":
         print("Nar:\tYou swing at it's eye with you first but only catch its nose. THe dragon howels and stumbles back.\nYou charge it after picking up a trick and and try to thrust it into the beast.\nThe stick shater and you fall onto the ground.\nThe dragon laughs as it BBQs you.")
         print("Nar:\tGAME OVER")
+        print()
 
     elif choice == "TALK":
         print("Nar:\tYou raise your hands in a non treating way and try to talk to teh dragon. He looks pulzed and replies, with a deal he will let you live if you become his servent.")
         print("Nar:\tGAME OVER YOU SURVIVE")
+        print()
 
     else:
         print("ERROR:\tInput not recognized, try agian.")
@@ -205,10 +223,12 @@ def lv_two_3_of_4():
 
     if choice == "RUN":
         print("Nar:\tYou get up and turn around to the dragon stading face to face with you.")
+        print()
         lv_three_5_of_8()
 
     elif choice == "STAY":
         print("Nar:\tYou choose to wait and cuntinue listening to the forest around you.")
+        print()
         lv_three_6_of_8()
 
     else:
@@ -223,13 +243,16 @@ def lv_three_7_of_8():
     if choice == "ROAD":
         print("Nar:\tYou fallow the road and it leads you to a village.\nThe village promises to help you kill the dragon.")
         print("Nar:\tGAME OVER, YOU WIN")
+        print()
 
     elif choice == "KEEP":
         print("Nar:\tYou keep running and the leaves and branches swat at you cutting and stinging,\n but you keep running.\n The you hear something overhead and it drives you to run faster.\n Sudenly you get pined to the ground, you looked up and see the dragon growing at you.")
         print("Nar:\tGAME OVER, YOU LOSE")
+        print()
 
     else:
         print("ERROR:\tInput not recognized, try agian.")
+        print()
         lv_three_7_of_8()
 
 # TODO Complete
@@ -240,14 +263,17 @@ def lv_three_8_of_8():
     if choice == "CALL":
         print("Nar:\tYou call out and the groupe sees you they all pull out weapons and charge in to help,\ntakeing down the dragon and taking you back to there village.")
         print("Nar:\tGAME OVER, YOU WIN")
+        print()
 
     elif choice == "AVOID":
         print("Nar:\tYou Ignore the group and keep running, you see a small cave and take shelter inside.\nYou hear the dragon start fighting the group of people,\nyou wait for the fighting to stop and then head out again.\nYou quitely look over the battle and see the dragon is dead.\nAfrad of these people you quietly slip away.")
         print("Nar:\tGAME OVER, YOU WIN")
+        print()
 
     else:
         print("ERROR:\tInput not recognized, try agian.")
         lv_three_8_of_8()
+        print()
 
 # TODO Complete
 def lv_two_4_of_4():
@@ -256,10 +282,12 @@ def lv_two_4_of_4():
 
     if choice == "ROCK":
         print("Nar:\tYou throw the rock and it lands further then the last,\nthe dragon looks up and moves to investigate that landing.\n")
+        print()
         lv_three_7_of_8()
 
     elif choice == "RUN":
         print("Nar:\tYou take off running and the dragon tunrns around and jumps at you.\nYou fall to the ground but get up and keep running. and the dragon takes another swing at you.")
+        print()
         lv_three_8_of_8()
 
     else:
@@ -274,9 +302,11 @@ def lv_one_2_of_2():
     print("His eyes scaning the brush.")
     choice = input("What do you do? STAY or DISTRACT by throwing a rock?.\n").upper()
     if choice == "STAY":
+        print()
         lv_two_3_of_4()
     
     elif choice == "DISTRACT":
+        print()
         lv_two_4_of_4()
     
     else:
@@ -299,11 +329,13 @@ def game_start():
             print("Nar:\tYou take off into the woods.")
             print("Nar:\tYou come up to a cave, it smells terable and is dark.")
             i = 0
+            print()
             lv_one_1_of_2()
 
         elif choice == "HIDE":
             print("Nar:\tYou jump into a bush.")
             lv_one_2_of_2()
+            print()
             i = 0
 
         else:
