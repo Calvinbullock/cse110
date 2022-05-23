@@ -179,13 +179,20 @@ def lv_three_6_of_8():
         print("ERROR:\tInput not recognized, try agian.")
         lv_three_6_of_8()
 
-#
+# TODO Complete
 def lv_three_5_of_8():
-    if choice == "":
-        print("Nar:\t")
-        
-    elif choice == "":
-        print("Nar:\t")
+    
+    print("Nar:\tYou stare into its eyes and they stare back.")
+    choice = input("Do you try to TALK your way out or FIGHT it.").upper()
+
+    if choice == "FIGHT":
+        print("Nar:\tYou swing at it's eye with you first but only catch its nose. THe dragon howels and stumbles back.\nYou charge it after picking up a trick and and try to thrust it into the beast.\nThe stick shater and you fall onto the ground.\nThe dragon laughs as it BBQs you.")
+        print("Nar:\tGAME OVER")
+
+    elif choice == "TALK":
+        print("Nar:\tYou raise your hands in a non treating way and try to talk to teh dragon. He looks pulzed and replies, with a deal he will let you live if you become his servent.")
+        print("Nar:\tGAME OVER YOU SURVIVE")
+
     else:
         print("ERROR:\tInput not recognized, try agian.")
         lv_three_5_of_8()
@@ -200,7 +207,6 @@ def lv_two_3_of_4():
         print("Nar:\tYou get up and turn around to the dragon stading face to face with you.")
         lv_three_5_of_8()
 
-
     elif choice == "STAY":
         print("Nar:\tYou choose to wait and cuntinue listening to the forest around you.")
         lv_three_6_of_8()
@@ -209,7 +215,6 @@ def lv_two_3_of_4():
         print("ERROR:\tInput not recognized, try agian.")
         lv_two_3_of_4()
             
-
 #
 def lv_three_7_of_8():
     print("Nar:\t")
