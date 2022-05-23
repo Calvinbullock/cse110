@@ -1,7 +1,7 @@
 
 #TODO Complete
 # This is lv 3 part 1 of 6
-def lv_three_1_of_6():
+def lv_three_1_of_8():
     choice = input("Nar:\tDo you TLAK to it, fight it, or RUN?\n").upper()
     if choice == "TALK":
         l = 0
@@ -29,11 +29,11 @@ def lv_three_1_of_6():
         
     else:
         print("ERROR:\t input not recognized, try agian.")
-        lv_three_1_of_6()
+        lv_three_1_of_8()
 
 # TODO Complete
 # This is lv 3 part 2 of 6
-def lv_three_2_of_6():
+def lv_three_2_of_8():
     l = 1 # LV 3
     while l == 1:
         choice = input("Nar:\tDo you KILL it or take it HOSTAGE \n").upper()
@@ -63,7 +63,7 @@ def lv_two_1_of_4():
         if choice == "EXIT":
             print("Nar:\tYou exit the cave and the dragon drops down right in front of you.")
             k = 0
-            lv_three_1_of_6()
+            lv_three_1_of_8()
             
         elif choice == "GO":
             print("Nar:\tYou walk further in and start feeling along the wall until you see the cave open up, there is a light!")
@@ -71,14 +71,14 @@ def lv_two_1_of_4():
             print("Nar:\tYou look around and see another tunnel and hear cries comeing from it, you follow them.")
             print("Nar:\tYou find a baby dragon inside.")
             k = 0
-            lv_three_2_of_6()
+            lv_three_2_of_8()
             
         else:
             print("ERROR:\t input not recognized, try agian.")
 
 # TODO Complete
 # This is Lv 3 part 3 of 6
-def lv_three_3_of_6():
+def lv_three_3_of_8():
     l = 1 # LV 3
     print("Nar:\tYou stop and think, if you climb a tree you could mabey see somewere to hide,\nor just make it easyer for the dragon to find you.")
     while l == 1:
@@ -99,7 +99,7 @@ def lv_three_3_of_6():
 
 # TODO Complete
 # This is Lv 3 part 4 of 6
-def lv_three_4_of_6():
+def lv_three_4_of_8():
     l = 1 # LV 3    
     while l == 1:
         choice = input("Nar:\tDo you choose to go to the ISLAND or cuntinue out to SEA?\n").upper()
@@ -127,14 +127,14 @@ def lv_two_2_of_4():
         if choice == "BACK":
             k = 0
             print("You turn around and run back into the woods.")
-            lv_three_3_of_6()
+            lv_three_3_of_8()
             
         elif choice == "BOAT":
             k = 0
             print("Nar:\tYou hop in the boat and start the moter the boat starts up and you gun the engion.")
             print("The boat starts skiming along the water and you see the forest you came from start to drop away in the distance.")
             print("ahead of you you see an island come into view.")
-            lv_three_4_of_6()
+            lv_three_4_of_8()
             
         else:
             print("ERROR:\t Input not recognized, try agian.")
@@ -160,15 +160,55 @@ def lv_one_1_of_2():
         else:
             print("ERROR:\t input not recognized, try agian.")
 
+
+#
+def lv_three_6_of_8():
+    print("Nar:\t")
+
+#
+def lv_three_5_of_8():
+    print("Nar:\t")
+
+#
+def lv_two_3_of_4():
+    print("Nar:\tYou sink lower into the bush and start to hold you breath. You hear the dragon snifing the air.\nYou hear a sound on the other side of the dragon it sounds like something running.\nYou think you hear the dragon chase it.")
+    choice = input("You again wounder if you should RUN or STAY\n").upper()
+
+    if choice == "RUN":
+        print("Nar:\tYou get up and turn around to the dragon stading face to face with you.")
+        lv_three_5_of_8
+
+
+    elif choice == "STAY":
+        print("Nar:\t")
+
+    else:
+        print("ERROR:\tInput not recognized, try agian.")
+        lv_two_3_of_4()
+            
+
+#
+def lv_three_7_of_8():
+    print("Nar:\t")
+
+#
+def lv_three_8_of_8():
+    print("Nar:\t")
+
+#
+def lv_two_3_of_4():
+    print("Nar:\t")
+
+
 # TODO In progress
 # This is the lv 1 part 2 of 2 ** This function calls lv 2 parts 1 - 2
 def lv_one_2_of_2():
     print("Nar:\tYou try to be as quite as possible in the bush.")
-    print("Nar:\tThe dragon slams into the ground and looks around.")
-    print("Nar:\tHis eyes scaning the brush.")
+    print("The dragon slams into the ground and looks around.")
+    print("His eyes scaning the brush.")
     choice = input("What do you do? STAY or DISTRACT by throwing a rock?.\n").upper()
     if choice == "STAY":
-        print("Nar:\tto be cuntinued")
+        lv_two_3_of_4()
     
     elif choice == "DISTRACT":
         print("Nar:\tto be cuntinued")
