@@ -183,7 +183,7 @@ def lv_three_6_of_8():
 def lv_three_5_of_8():
     
     print("Nar:\tYou stare into its eyes and they stare back.")
-    choice = input("Do you try to TALK your way out or FIGHT it.").upper()
+    choice = input("Do you try to TALK your way out or FIGHT it.\n").upper()
 
     if choice == "FIGHT":
         print("Nar:\tYou swing at it's eye with you first but only catch its nose. THe dragon howels and stumbles back.\nYou charge it after picking up a trick and and try to thrust it into the beast.\nThe stick shater and you fall onto the ground.\nThe dragon laughs as it BBQs you.")
@@ -215,18 +215,41 @@ def lv_two_3_of_4():
         print("ERROR:\tInput not recognized, try agian.")
         lv_two_3_of_4()
             
-#
+# TODO
 def lv_three_7_of_8():
     print("Nar:\t")
+    choice = input("\n").upper()
 
-#
+    if choice == "ROCK":
+        print("Nar:\t\n")
+
+    elif choice == "RUN":
+        print("Nar:\t")
+
+    else:
+        print("ERROR:\tInput not recognized, try agian.")
+        lv_three_7_of_8()
+
+# TODO
 def lv_three_8_of_8():
     print("Nar:\t")
 
-#
+# TODO
 def lv_two_4_of_4():
-    print("Nar:\t")
+    print("Nar:\tYou pick up a rock and chuck it away from you.\nYou hear it crash agianst the forest floor.\nThe dragon wips his head in that direction and begins moveing away from you.")
+    choice = input("Do you RUN or throw another ROCK\n").upper()
 
+    if choice == "ROCK":
+        print("Nar:\tYou throw the rock and it lands further then the last,\nthe dragon looks up and moves to investigate that landing.\n")
+        lv_three_7_of_8()
+
+    elif choice == "RUN":
+        print("Nar:\t")
+        lv_three_8_of_8()
+
+    else:
+        print("ERROR:\tInput not recognized, try agian.")
+        lv_two_4_of_4()
 
 # TODO In progress
 # This is the lv 1 part 2 of 2 ** This function calls lv 2 parts 1 - 2
@@ -239,7 +262,7 @@ def lv_one_2_of_2():
         lv_two_3_of_4()
     
     elif choice == "DISTRACT":
-        print("Nar:\tto be cuntinued")
+        lv_two_4_of_4()
     
     else:
         print("ERROR:\tInput not recognized, try agian.")
@@ -270,7 +293,6 @@ def game_start():
 
         else:
             print("ERROR:\tInput not recognized, try agian.")
-
 
 # This is the main function section
 game_start()
