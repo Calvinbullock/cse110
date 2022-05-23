@@ -163,7 +163,15 @@ def lv_one_1_of_2():
 
 #
 def lv_three_6_of_8():
-    print("Nar:\t")
+    if choice == "":
+        print("Nar:\t")
+        
+    elif choice == "":
+        print("Nar:\t")
+
+    else:
+        print("ERROR:\tInput not recognized, try agian.")
+        lv_three_6_of_8()
 
 #
 def lv_three_5_of_8():
@@ -176,11 +184,12 @@ def lv_two_3_of_4():
 
     if choice == "RUN":
         print("Nar:\tYou get up and turn around to the dragon stading face to face with you.")
-        lv_three_5_of_8
+        lv_three_5_of_8()
 
 
     elif choice == "STAY":
-        print("Nar:\t")
+        print("Nar:\tYou choose to wait and cuntinue listening to the forest around you.")
+        lv_three_6_of_8()
 
     else:
         print("ERROR:\tInput not recognized, try agian.")
