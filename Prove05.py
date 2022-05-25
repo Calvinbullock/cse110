@@ -6,7 +6,7 @@ def lv_three_1_of_8():
     if choice == "TALK":
         l = 0
         print("Nar:\tYou kneel in front of the dragon and ask that he not eat you.")
-        print("Nar:\tThe dragon replies, he eats you.")
+        print("Nar:\tThe dragon ignores you attempts to speak and eats you.")
         print("Nar:\tGAME OVER")
         print()
         
@@ -42,7 +42,7 @@ def lv_three_2_of_8():
         choice = input("Nar:\tDo you KILL it or take it HOSTAGE \n").upper()
         if choice == "KILL":
             l = 0
-            print("Nar:\tYou start looking for a weapon but the biger dragon crawls his way in.")
+            print("Nar:\tYou start looking for a weapon but the bigger dragon crawls his way in.")
             print("Nar:\tHe sees you in here and eats out of fear of you harming the baby.")
             print("Nar:\tGAME OVER")
             print()
@@ -89,7 +89,7 @@ def lv_three_3_of_8():
     l = 1 # LV 3
     print("Nar:\tYou stop and think, if you climb a tree you could mabey see somewere to hide,\nor just make it easyer for the dragon to find you.")
     while l == 1:
-        choice = input("Nar:\tYou stop and think if you CLIMB a tree it or keep RUNNING")
+        choice = input("Nar:\tYou stop and think if you CLIMB a tree it or keep RUNNING\n").upper()
         if choice == "CLIMB":
             print("Nar:\tYou climb the tree and as you get to the top you look around and see a small town.")
             print("Nar:\tYou run to the town and when you arive you exsplane about the dragon and they take you in.")
@@ -98,7 +98,7 @@ def lv_three_3_of_8():
             l = 0
         elif choice == "RUNNING":
             print("Nar:\tYou decide to keep running. You hear the sound of the dragon overhead. You keep running.")
-            print("Nar:\tBut the dragon can hear you smashing through the brush in fear. He dives and grabs you with his teach.")
+            print("Nar:\tBut the dragon can hear you smashing through the brush in fear. He dives and grabs you with his teeth.")
             print("Nar:\tGAME OVER, YOU LOSE")
             print("")
             l = 0
@@ -108,18 +108,14 @@ def lv_three_3_of_8():
 # TODO Complete
 # This is Lv 3 part 4 of 6
 def lv_three_4_of_8():
-    l = 1 # LV 3    
-    while l == 1:
         choice = input("Nar:\tDo you choose to go to the ISLAND or cuntinue out to SEA?\n").upper()
         if choice == "ISLAND":
-            k = 0
             print("Nar:\tYou reach the island and find a nice abandednd house that is still in very good repear.")
             print("and stocked with suplies. You decide to rest here as the ragon shouldn't know were you are.")
             print("Nar:\tGAME OVER, YOU WIN")
             print()
             
         elif choice == "SEA":
-            k = 0
             print("Nar:\tYou keep heading out to sea and a strom rolls in, the little boat is no match for the waves.")
             print("It capsized and you meet a water grave.")
             print("Nar:\tGAME OVER, YOU LOSE")
@@ -127,6 +123,7 @@ def lv_three_4_of_8():
             
         else:
             print("ERROR:\t Input not recognized, try agian.")
+            lv_three_4_of_8()
 
 # TODO Complete
 # This is the lv 2 part 2 of 4 -- This function calls lv 3 parts 3 - 4
@@ -177,8 +174,8 @@ def lv_one_1_of_2():
 
 # TODO Complete
 def lv_three_6_of_8():
-    print("Nar:\tYou sit queitly listening for any sound but nothing not even the chirping of a bug.\n it feels like hours pass and you decied to stand up.\nYou look around and see a sign.")
-    choice = input("The sign says nerist town 3 miles LRFT the other says next town 7 miles RIGHT. Whitch do you choose\n").upper()
+    print("Nar:\tYou sit queitly listening for any sound but nothing not even the chirping of a bug.\nIt feels like hours pass and you decied to stand up.\nYou look around and see a sign.")
+    choice = input("The sign says nerist town 3 miles LEFT the other says next town 7 miles RIGHT. Whitch do you choose\n").upper()
   
     if choice == "LEFT":
         print("Nar:\t You reach the town and but nothing but a smoldering wreckage is left,\nWith the dragon standing in the center of it.")
@@ -316,7 +313,7 @@ def lv_one_2_of_2():
 # TODO Use recurstion for the new fuctions
 # # Main function
 def game_start():
-    print("Nar:\tYou wake up you look up at the cliff lay laying under,\nthe last thing you can remember is being chased by a dragon.")
+    print("Nar:\tYou wake up you look up at the cliff your laying under,\nthe last thing you can remember is being chased by a dragon.")
     print("Nar:\tYou hear a roar from the sky.")
 
     i = 1 # LV 0
