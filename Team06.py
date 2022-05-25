@@ -17,10 +17,10 @@ if second_rider == "YES":
     seconed_age = int(input("What is the age of the second rider? ")) #14
     seconed_height = int(input("What is the height of the second rider? ")) #35
 
-    if age > 11 and age < 18:
+    if seconed_age > 11 and seconed_age < 18:
         has_ticket = input("Does this rider have a golden passport (yes/no)? ")
         if  has_ticket == "yes":
-            age = 18
+            seconed_age = 18
 
     if ((height >= 36) and (seconed_height >= 36)) and \
         (((age >= 18) or (seconed_age >= 18)) and \
