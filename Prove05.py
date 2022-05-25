@@ -175,7 +175,7 @@ def lv_one_1_of_2():
 # TODO Complete
 def lv_three_6_of_8():
     print("Nar:\tYou sit queitly listening for any sound but nothing not even the chirping of a bug.\nIt feels like hours pass and you decied to stand up.\nYou look around and see a sign.")
-    choice = input("The sign says nerist town 3 miles LEFT the other says next town 7 miles RIGHT. Whitch do you choose\n").upper()
+    choice = input("The sign says nerist town 3 miles LEFT the other says next town 7 miles RIGHT. Whitch do you choose?\n").upper()
   
     if choice == "LEFT":
         print("Nar:\t You reach the town and but nothing but a smoldering wreckage is left,\nWith the dragon standing in the center of it.")
@@ -255,7 +255,7 @@ def lv_three_7_of_8():
 # TODO Complete
 def lv_three_8_of_8():
     print("Nar:\tYou dodge and see a group of people ahead of you")
-    choice = input("\nDo you CALL out to the People or try to AVOID them?").upper()
+    choice = input("Do you CALL out to the People or try to AVOID them?").upper()
 
     if choice == "CALL":
         print("Nar:\tYou call out and the groupe sees you they all pull out weapons and charge in to help,\ntakeing down the dragon and taking you back to there village.")
@@ -297,7 +297,7 @@ def lv_one_2_of_2():
     print("Nar:\tYou try to be as quite as possible in the bush.")
     print("The dragon slams into the ground and looks around.")
     print("His eyes scaning the brush.")
-    choice = input("What do you do? STAY or DISTRACT by throwing a rock?.\n").upper()
+    choice = input("What do you do? STAY or DISTRACT by throwing a rock?\n").upper()
     if choice == "STAY":
         print()
         lv_two_3_of_4()
