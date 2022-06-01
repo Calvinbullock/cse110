@@ -17,5 +17,5 @@ while play_again == "yes":
         guess_num = guess_num + 1
 
     print("You guessed it!")
-    print(f"It took you {guess_num}")
+    print(f"It took you {guess_num} guess")
     play_again = input("Do you want to play again? (Yes/No) ").lower()
