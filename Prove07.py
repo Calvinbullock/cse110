@@ -1,10 +1,5 @@
 #
 
-from ctypes.wintypes import WORD
-from re import I
-from turtle import position
-
-
 secret_word = "Hello"
 
 print("Welcome to the word guessing game!")
@@ -26,13 +21,21 @@ while guess.upper() == secret_word.upper():
         elif 
 
 
-if letter not in WORD
+if letter: #not in word
     + "_"
-elif letter is in word
-    + letter.lower()
-elif letter == secret_word[j]
-    answer + letter.upper()
+elif letter: #is in word
+
+    k = 0
+    while k < len(secret_word):
+        if letter == secret_word[k]:
+            
+            + letter.lower()
+            exit
+
+        elif letter == secret_word[i]:
+            answer + letter.upper()
         
+
 print("Congratulations! You guessed it!")
 
 # TODO Rules
