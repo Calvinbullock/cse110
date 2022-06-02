@@ -1,13 +1,40 @@
 #
 
-from pickle import FALSE
-from re import A
+from wsgiref.util import guess_scheme
 
-
-secret_word = "Hello".lower()
 
 print("Welcome to the word guessing game!")
+a_b_c = input("Do you want to guess word A, B, or C? ").upper()
+
+if a_b_c == "A":
+    secret_word = "hello"
+elif a_b_c == "B":
+    secret_word = "red"
+elif a_b_c == "C":
+    secret_word = "computer"
+
 guess = input("What is your guess? ").lower()
+i = 0
+extra = ""
+e = 1
+
+# removes the extra length from the longer word and saves it to extra
+if len(secret_word) > len(guess):
+    e = len(secret_word) - len(guess)
+    while e < len(secret_word): 
+        extra = extra + secret_word[e]
+
+        while i < e:
+            short_word = secret_word[i]
+
+elif len(secret_word) < len(guess):
+    e = len(guess) - len(secret_word)
+    while e < len(guess): 
+        extra = extra + guess[e]
+
+    while i < e:
+        short_word = guess[i]
+
 i = -1
 
 while guess != secret_word:
@@ -34,7 +61,7 @@ while guess != secret_word:
             if letterInWord: # if the letter is not in the secret word
                 answer = answer + "_"
 
-    print(f"Your hint is: {answer}")
+    print(f"Your hint is: {answer + extra}")
     guess = input("What is your guess? ")
     
 print("Congratulations! You guessed it!")
