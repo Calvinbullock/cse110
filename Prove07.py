@@ -6,6 +6,7 @@ from wsgiref.util import guess_scheme
 print("Welcome to the word guessing game!")
 a_b_c = input("Do you want to guess word A, B, or C? ").upper()
 
+# my own addition, give word options
 if a_b_c == "A":
     secret_word = "hello"
 elif a_b_c == "B":
@@ -14,57 +15,58 @@ elif a_b_c == "C":
     secret_word = "computer"
 
 guess = input("What is your guess? ").lower()
-i = 0
-extra = ""
-e = 1
-
-# removes the extra length from the longer word and saves it to extra
-if len(secret_word) > len(guess):
-    e = len(secret_word) - len(guess)
-    while e < len(secret_word): 
-        extra = extra + secret_word[e]
-
-        while i < e:
-            short_word = secret_word[i]
-
-elif len(secret_word) < len(guess):
-    e = len(guess) - len(secret_word)
-    while e < len(guess): 
-        extra = extra + guess[e]
-
-    while i < e:
-        short_word = guess[i]
-
-i = -1
+guess_count = 1
 
 while guess != secret_word:
+    i = 0
+    extra = ""
     answer = ""
+    e = 1
+
+    # removes the extra length from the longer word and saves it to extra
+    if len(secret_word) < len(guess):
+        e = len(secret_word)
+        # print(f"g = {guess}, {len(guess)}, se = {len(secret_word)}")
+        while e < len(guess): 
+            extra = extra + guess[e]
+            # print(extra + f", 34, {e}")
+            e = e + 1
+
+    while i < e and i < len(guess):
+        short_word = guess[i]
+        i = i + 1
+
+    i = -1
 
     while i < min(len(secret_word), len(guess)):
         i = i + 1
 
         if i < min(len(secret_word), len(guess)) and guess[i] == secret_word[i]: #in word at that location
             answer = answer + guess[i].upper()
+            # print(answer + ", 48\n")
 
         elif i < min(len(secret_word), len(guess)): #letter is in word anywhere
             letter = guess[i]
             j = 0
             letterInWord = True
 
-            while j < len(guess):
+            while j < min(len(secret_word), len(guess)):
                 if letter == secret_word[j]:
                     answer = answer + guess[i].lower()
+                    # print(answer + ", 58\n")
                     letterInWord = False
-
                 j = j + 1
 
             if letterInWord: # if the letter is not in the secret word
                 answer = answer + "_"
+                # print(answer + ", 66\n")
+
 
     print(f"Your hint is: {answer + extra}")
     guess = input("What is your guess? ")
+    guess_count = guess_count + 1
     
-print("Congratulations! You guessed it!")
+print(f"Congratulations! You guessed it!\nIt took you {guess_count} guesses.")
 
 # TODO Rules
 # An underscore _ indicates that the letter was not present in the secret word.
