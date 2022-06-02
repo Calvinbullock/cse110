@@ -1,41 +1,42 @@
 #
 
-secret_word = "Hello"
+from pickle import FALSE
+from re import A
+
+
+secret_word = "Hello".lower()
 
 print("Welcome to the word guessing game!")
-guess = input("What is your guess? ")
+guess = input("What is your guess? ").lower()
+i = -1
 
-i = 0
-while guess.upper() == secret_word.upper():
-    print("Your guess was not correct.")
-    guess = input("What is your guess? ")
-
-    letter = guess[i]
-    j = 0
-    i =+ 1
+while guess != secret_word:
     answer = ""
-    while j < len(guess):
-        j =+ 1
-        if secret_word[j] == letter:
-            answer = secret_word[j]
-        elif 
 
+    while i < min(len(secret_word), len(guess)):
+        i = i + 1
 
-if letter: #not in word
-    + "_"
-elif letter: #is in word
+        if i < min(len(secret_word), len(guess)) and guess[i] == secret_word[i]: #in word at that location
+            answer = answer + guess[i].upper()
 
-    k = 0
-    while k < len(secret_word):
-        if letter == secret_word[k]:
-            
-            + letter.lower()
-            exit
+        elif i < min(len(secret_word), len(guess)): #letter is in word anywhere
+            letter = guess[i]
+            j = 0
+            letterInWord = True
 
-        elif letter == secret_word[i]:
-            answer + letter.upper()
-        
+            while j < len(guess):
+                if letter == secret_word[j]:
+                    answer = answer + guess[i].lower()
+                    letterInWord = False
 
+                j = j + 1
+
+            if letterInWord: # if the letter is not in the secret word
+                answer = answer + "_"
+
+    print(f"Your hint is: {answer}")
+    guess = input("What is your guess? ")
+    
 print("Congratulations! You guessed it!")
 
 # TODO Rules
