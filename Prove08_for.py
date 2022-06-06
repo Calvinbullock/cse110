@@ -18,49 +18,41 @@ guess_count = 1
 while guess != secret_word:
     i = 0
     extra = ""
-    answer = ""
     e = 1
 
     # removes the extra length from the longer word and saves it to extra
     if len(secret_word) < len(guess):
         e = len(secret_word)
-        # print(f"g = {guess}, {len(guess)}, se = {len(secret_word)}")
+
         while e < len(guess): 
             extra = extra + guess[e]
-            # print(extra + f", 34, {e}")
             e = e + 1
 
+    print(f"Your hint is: ")
     while i < e and i < len(guess):
         short_word = guess[i]
         i = i + 1
 
-    i = -1
+    for i in range(0, min(len(secret_word), len(guess))):
+        if guess[i] == secret_word[i]: #in word at that location - uppercase letter
+            print(secret_word[i].upper(), end="")
 
-    while i < min(len(secret_word), len(guess)):
-        i = i + 1
-
-        if i < min(len(secret_word), len(guess)) and guess[i] == secret_word[i]: #in word at that location
-            answer = answer + guess[i].upper()
-            # print(answer + ", 48\n")
-
-        elif i < min(len(secret_word), len(guess)): #letter is in word anywhere
-            letter = guess[i]
-            j = 0
+        else: #letter is in word anywhere - lowecase letter
             letterInWord = True
+            for j in range(min(len(secret_word), len(guess))):
 
-            while j < min(len(secret_word), len(guess)):
-                if letter == secret_word[j]:
-                    answer = answer + guess[i].lower()
-                    # print(answer + ", 58\n")
+                if guess[i] == secret_word[j]:
+                    print(guess[i].lower(), end="")
                     letterInWord = False
                 j = j + 1
 
-            if letterInWord: # if the letter is not in the secret word
-                answer = answer + "_"
-                # print(answer + ", 66\n")
+            # print(letterInWord)
+            if letterInWord: # if the letter is not in the secret word - "_"
+                print("_", end="")
 
-
-    print(f"Your hint is: {answer + extra}")
+        
+    print(extra, end="")
+    print()
     guess = input("What is your guess? ")
     guess_count = guess_count + 1
     
