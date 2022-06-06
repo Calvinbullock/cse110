@@ -1,6 +1,4 @@
-#
 
-from wsgiref.util import guess_scheme
 
 
 print("Welcome to the word guessing game!")
