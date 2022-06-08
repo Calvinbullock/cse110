@@ -15,42 +15,59 @@ elif a_b_c == "C":
 guess = input("What is your guess? ").lower()
 guess_count = 1
 
-while guess != secret_word:
+while guess != secret_word: # main loop
     i = 0
     extra = ""
     e = 1
 
-    # removes the extra length from the longer word and saves it to extra
-    if len(secret_word) < len(guess):
-        e = len(secret_word)
+    if len(guess) < len(secret_word): # This deals with guesses that are shorter then the secret_word
+        dif = len(secret_word) - len(guess)
+        print(f"Your hint is: ", end="")
 
-        while e < len(guess): 
-            extra = extra + guess[e]
-            e = e + 1
+        for i in range(len(guess)):
+            if guess[i] == secret_word[i]: #in word at that location - uppercase letter
+                print(secret_word[i].upper(), end="")
 
-    print(f"Your hint is: ")
-    while i < e and i < len(guess):
-        short_word = guess[i]
-        i = i + 1
-
-    for i in range(0, min(len(secret_word), len(guess))):
-        if guess[i] == secret_word[i]: #in word at that location - uppercase letter
-            print(secret_word[i].upper(), end="")
-
-        else: #letter is in word anywhere - lowecase letter
-            letterInWord = True
-            for j in range(min(len(secret_word), len(guess))):
-
-                if guess[i] == secret_word[j]:
-                    print(guess[i].lower(), end="")
-                    letterInWord = False
-                j = j + 1
-
-            # print(letterInWord)
-            if letterInWord: # if the letter is not in the secret word - "_"
+            elif guess[i] in secret_word: # letter is in word - lowercase 
+                print(guess[i].lower(), end="")
+            else:# not in word
                 print("_", end="")
+            
+        for k in range(dif): # this will add extra blanks to make the hint match the secret_word length
+            print("_", end="")
 
-        
+
+    else: # if guess is the same length or longer
+        # removes the extra length from the longer word and saves it to extra
+        if len(secret_word) < len(guess):
+            e = len(secret_word)
+
+            while e < len(guess): 
+                extra = extra + guess[e]
+                e = e + 1
+
+        print(f"Your hint is: ", end="")
+        while i < e and i < len(guess):
+            short_word = guess[i]
+            i = i + 1
+
+        for i in range(0, min(len(secret_word), len(guess))):
+            if guess[i] == secret_word[i]: #in word at that location - uppercase letter
+                print(secret_word[i].upper(), end="")
+
+            else: #letter is in word anywhere - lowecase letter
+                letterInWord = True
+                for j in range(min(len(secret_word), len(guess))):
+
+                    if guess[i] == secret_word[j]:
+                        print(guess[i].lower(), end="")
+                        letterInWord = False
+                    j = j + 1
+
+                # print(letterInWord)
+                if letterInWord: # if the letter is not in the secret word - "_"
+                    print("_", end="")
+
     print(extra, end="")
     print()
     guess = input("What is your guess? ")
@@ -65,9 +82,6 @@ print(f"Congratulations! You guessed it!\nIt took you {guess_count} guesses.")
 # An uppercase letter indicates that the letter was present at that exact spot in the secret word. 
 # (In other words, if the second letter in the guess is also the second letter in the secret word, 
 # then that letter is shown as a capital.)
-
-
-
 
 #TODO output ex 1
 
