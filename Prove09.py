@@ -1,5 +1,6 @@
 
 cart_items = []
+item_prices = []
 exit = 1
 
 print("Welcome to the Shopping Cart Program!")
@@ -15,6 +16,8 @@ while exit == 1:
     if action == 1: # Add item
         item = input("What item would you like to add? ")
         cart_items.append(item)
+        price = float((f"What is the price of '{item}'? "))
+        item_prices.append(price)
         print(f"'{item}' has been added to the cart.")
 
     elif action == 2: # View cart
@@ -36,19 +39,19 @@ while exit == 1:
 
 
 
-# Have menu system that repeats until the user chooses quit.
+## Have menu system that repeats until the user chooses quit.
 
-# Create a list that will store the names of the items in the shopping cart.
+## Create a list that will store the names of the items in the shopping cart.
 
-# Complete the option to add the name of the item to the list.
+## Complete the option to add the name of the item to the list.
 
-# Complete the option to display the names of the items in the list.
+## Complete the option to display the names of the items in the list.
 
 # TODO Final req
 
-# Store prices as well as names.
+## Store prices as well as names.
 
-# Change the add functionality to also ask for and store the price of the item.
+## Change the add functionality to also ask for and store the price of the item.
 
 # Change the display functionality to also display the prices of the items.
 
