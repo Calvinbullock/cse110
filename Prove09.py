@@ -1,10 +1,10 @@
 
 cart_items = []
 item_prices = []
-exit = 1
+exit = True
 
 print("Welcome to the Shopping Cart Program!")
-while exit == 1:
+while exit:
     print("Please select one of the following: ")
     print("1. Add item")
     print("2. View cart")
@@ -44,7 +44,7 @@ while exit == 1:
         print(f"The total price of the items in the shopping cart is ${round(total, 2)}")
 
     elif action == 5: # Quit
-        exit = 0
+        exit = False
         print("Thank you. Goodbye.")
 
     print()
