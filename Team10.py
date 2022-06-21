@@ -1,14 +1,14 @@
 
 
 
-acounts = ["checking", "savings"]
-balances = [238.12, 392.99]
+# acounts = ["checking", "savings"]
+# balances = [238.12, 392.99]
 
 # acounts = ["checking", "saveing", "e fund"]
 # balances = [102.57, 82.32, 200.00]
 
-# acounts = []
-# balances = []
+acounts = []
+balances = []
 
 acount = ""
 print("Enter the names and balances of bank accounts (type: quit when done).")
