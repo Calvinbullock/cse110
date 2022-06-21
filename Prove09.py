@@ -1,7 +1,15 @@
 
+
+# TODO need to add a creativity thing
+# TODO need to add a creativity thing
+# TODO need to add a creativity thing
+# TODO need to add a creativity thing
+# TODO need to add a creativity thing
+
 cart_items = []
 item_prices = []
 exit = True
+total = 0
 
 print("Welcome to the Shopping Cart Program!")
 while exit:
@@ -49,6 +57,12 @@ while exit:
 
     print()
 
+
+# TODO need to add a creativity thing
+# TODO need to add a creativity thing
+# TODO need to add a creativity thing
+# TODO need to add a creativity thing
+# TODO need to add a creativity thing
 
 
 ## Have menu system that repeats until the user chooses quit.
