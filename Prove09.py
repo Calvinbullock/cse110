@@ -1,11 +1,5 @@
 
 
-# TODO need to add a creativity thing
-# TODO need to add a creativity thing
-# TODO need to add a creativity thing
-# TODO need to add a creativity thing
-# TODO need to add a creativity thing
-
 cart_items = []
 item_prices = []
 exit = True
@@ -21,48 +15,63 @@ while exit:
     print("5. Quit")
     action = int(input("Please enter an action: "))
 
-    if action == 1: # Add item
+    # Add item
+    if action == 1:
         item = input("What item would you like to add? ")
         cart_items.append(item)
         price = float(input(f"What is the price of '{item}'? "))
         item_prices.append(price)
         print(f"'{item}' has been added to the cart.")
 
-    elif action == 2: # View cart
+    # View cart
+    elif action == 2:
         print("The contents of the shopping cart are:")
         for i in range(len(cart_items)):
             print(f"{i+1}. {cart_items[i]} - ${round(item_prices[i], 2)}")
 
-    elif action == 3: # Remove item
+    # Remove item
+    elif action == 3:
+        # Will prin the contents of the cart
+        print("The contents of the shopping cart are:")
+        for i in range(len(cart_items)):
+            print(f"{i+1}. {cart_items[i]} - ${round(item_prices[i], 2)}")
+
+        print()
         remove_item = int(input("Which item would you like to remove? "))
         remove_item -= 1 
 
-        if remove_item >= 0:
-            del cart_items[remove_item]
-            del item_prices[remove_item]
-            print("Item removed.")
+        # The index they used is not in the list range
+        if remove_item > len(cart_items)-1 or remove_item < 0:
+            print("sorry, that is not a valid item number.")
+
+        # All good remove item
+        elif remove_item >= 0:
+            removed = cart_items.pop(remove_item)
+            item_prices.pop(remove_item)
+            print(f"Item removed was {removed}.")
 
         else:
             print("Number was not an item.")
 
-    elif action == 4: # Compute total
+    # Compute total
+    elif action == 4:
         total = 0
         for i in item_prices:
             total += i
+
         print(f"The total price of the items in the shopping cart is ${round(total, 2)}")
 
-    elif action == 5: # Quit
+    # Quit
+    elif action == 5:
         exit = False
         print("Thank you. Goodbye.")
 
     print()
 
 
+
 # TODO need to add a creativity thing
-# TODO need to add a creativity thing
-# TODO need to add a creativity thing
-# TODO need to add a creativity thing
-# TODO need to add a creativity thing
+# It will print out the cart when ever you ask to delete an item
 
 
 ## Have menu system that repeats until the user chooses quit.
@@ -73,7 +82,7 @@ while exit:
 
 ## Complete the option to display the names of the items in the list.
 
-# TODO Final req
+# TODO Final req (below)
 
 ## Store prices as well as names.
 
