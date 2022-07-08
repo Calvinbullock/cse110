@@ -4,17 +4,16 @@ choice = int(input("Would you like to input a 1.year or a 2.country? "))
 if choice == 1:
     spec_yr = int(input("Enter the year of interest: "))
 
-    spec_yr_min_life_exp = 100.0
-    spec_yr_min_life_ctry = 0
-    spec_yr_max_life_exp = 0.00
-    spec_yr_max_life_ctry = 0
-
 elif choice == 2:
-    spec_ctry = int(input("Enter the country of interest: "))
+    spec_ctry = input("Enter the country of interest: ")
+    
+spec_min_life_exp = 100.0
+spec_min_life_ctry = 0
+spec_max_life_exp = 0.00
+spec_max_life_ctry = 0
 
-
-average_life_ex = 0
-average_count = 0
+avg_life_ex = 0
+avg_count = 0
 
 min_life_exp = 100.0
 min_life_country = 0
@@ -23,8 +22,6 @@ min_life_yr = 0
 max_life_exp = 0.00
 max_life_country = 0
 max_life_yr = 0
-
-
 
 with open("life-expectancy.csv") as life_file:
     next(life_file)
@@ -46,45 +43,39 @@ with open("life-expectancy.csv") as life_file:
             max_life_country = country
             max_life_yr = year
 
-        if choice == 1:
-            # Finds the greatest and least life expectancy with a matching year to user input
-            if year == spec_yr:
-                average_life_ex += life_expectancy
-                average_count += 1
+        # Finds the greatest and least life expectancy with a matching year or country to user input
+        if year == spec_yr or country == spec_ctry:
+            avg_life_ex += life_expectancy
+            avg_count += 1
 
-                if intrest_min_life_exp > life_expectancy:
-                    spec_yr_min_life_exp = life_expectancy
-                    spec_yr_min_life_ctry = country
+            if spec_min_life_exp > life_expectancy:
+                spec_min_life_exp = life_expectancy
+                spec_min_life_ctry = country
 
-                if intrest_max_life_exp < life_expectancy:
-                    spec_yr_max_life_exp = life_expectancy
-                    spec_yr_max_life_ctry = country
+            if spec_max_life_exp < life_expectancy:
+                spec_max_life_exp = life_expectancy
+                spec_max_life_ctry = country
 
-        else:
-            # Finds the greatest and least life expectancy with a matching country to user input
-            if year == spec_ctry:
-                average_life_ex += life_expectancy
-                average_count += 1
-
-                if intrest_min_life_exp > life_expectancy:
-                    intrest_min_life_exp = life_expectancy
-                    intrest_min_life_country = country
-
-                if intrest_max_life_exp < life_expectancy:
-                    intrest_max_life_exp = life_expectancy
-                    intrest_max_life_country = country
             
-    average_life_ex = average_life_ex / average_count
+    avg_life_ex = avg_life_ex / avg_count
 
 print()
 print(f"The overall max life expectancy is: {max_life_exp} from {max_life_country} in {max_life_yr}")
 print(f"The overall min life expectancy is: {min_life_exp} from {min_life_country} in {min_life_yr}")
 
 print()
-print(f"For the year {spec_yr}")
-print(f"The average life expectancy across all countries was {average_life_ex:.2f}")
-print(f"The max life expectancy was in {spec_yr_max_life_ctry} with {spec_yr_max_life_exp}")
-print(f"The min life expectancy was in {spec_yr_min_life_ctry} with {spec_yr_min_life_exp}")
+if choice == 1:
+    print(f"For the year {spec_yr}")
+    print(f"The average life expectancy across all countries was {avg_life_ex:.2f}")
+    print(f"The max life expectancy was in {spec_max_life_ctry} with {spec_max_life_exp}")
+    print(f"The min life expectancy was in {spec_min_life_ctry} with {spec_min_life_exp}")
+
+elif choice == 2:
+    print(f"For the year {spec_ctry}")
+    print(f"The average life expectancy across all countries was {avg_life_ex:.2f}")
+    print(f"The max life expectancy was in {spec_max_life_ctry} with {spec_max_life_exp}")
+    print(f"The min life expectancy was in {spec_min_life_ctry} with {spec_min_life_exp}")
+
 
 
 # TODO INFO
