@@ -1,5 +1,4 @@
 from cmath import pi
-from pickle import FALSE
 
 def compute_rectangle_area(rec_length, rec_width):
     return rec_length * rec_width
